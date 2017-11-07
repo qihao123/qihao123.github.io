@@ -135,14 +135,34 @@ hexo init
 hexo g
 hexo s
 //open http://localhost:4000 this is you blog local version 
-</code></pre><p>‘’’</p>
+</code></pre><h2 id="‘’’"><a href="#‘’’" class="headerlink" title="‘’’"></a>‘’’</h2><h2 id="how-to-write-blog"><a href="#how-to-write-blog" class="headerlink" title="how to write blog"></a>how to write blog</h2><ul>
+<li>find folder in hexo names ../hexo/source/_posts this folder is a markdown file storage,anything you  create the new page will be storage in this folder</li>
+<li>When you finish writing you must use “hexo g”command to generates a static page to the public directory.(when you first use this command you should execution “nmp install hexo-deployer-git –save”) </li>
+<li>then you can execution “hexo s” command Open preview access port.</li>
+<li>enter “<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>“ in you browser .you can watch you blog,but this is in you local computer.</li>
+</ul>
+<p>next we will learn how to pull you blog in you github.</p>
 <hr>
-<h2 id="remote-version"><a href="#remote-version" class="headerlink" title="remote version"></a>remote version</h2>
+<h2 id="remote-version"><a href="#remote-version" class="headerlink" title="remote version"></a>remote version</h2><p>when you have a github account</p>
+<ul>
+<li>you should build a repository named “you_github name”.github.io.just like me <a href="qihao123.github.io">qihao123.github.io</a></li>
+<li>in hexo folder search a called _config.yml file and open it(if you cant open it you should better install a notepad++ it can open a lot of format file it include .yml)</li>
+<li><p>alter some word in .yml:</p>
+<pre><code>deploy:
+    type: git
+    repo: https://github.com/&quot;you new repository&quot;
+    branch: master
+    //note: next&quot;:&quot;have a &quot; &quot;
+</code></pre></li>
+<li>then you can execution “hexo d” command remote you blog in github</li>
+<li>open <a href="https://you" target="_blank" rel="external">https://you</a> name.github.io watching you  blog!</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/11/07/how-to-build-you-own-hexo-blog/" data-id="cj9pgnkf90000jsdgt17h3ybt" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2017/11/07/how-to-build-you-own-hexo-blog/" data-id="cj9pogxsc0000hodgaefoctzm" class="article-share-link">Share</a>
       
 
       
